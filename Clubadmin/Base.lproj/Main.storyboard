@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BhJ-gA-n7n">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Y2S-jE-iKf">
+            <objects>
+                <viewController id="BhJ-gA-n7n" customClass="ViewController" customModule="Clubadmin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Xc-yz-iph">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1UF-XF-xXz">
+                                <rect key="frame" x="127" y="20" width="121" height="29"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAU-X7-4ox">
+                                <rect key="frame" x="116" y="56" width="142" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="클릭!"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5UL-MA-cDG">
+                                <rect key="frame" x="16" y="94" width="342" height="553"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" highlightedImage="poror" translatesAutoresizingMaskIntoConstraints="NO" id="2xJ-uv-4IZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="342" height="16"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rU1-ys-6vE">
+                                        <rect key="frame" x="0.0" y="503" width="342" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0F8-Mb-jRw">
+                                <rect key="frame" x="140.5" y="309.5" width="94" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0F8-Mb-jRw" firstAttribute="centerX" secondItem="3Xc-yz-iph" secondAttribute="centerX" id="2o8-n4-WGW"/>
+                            <constraint firstItem="5UL-MA-cDG" firstAttribute="leading" secondItem="3Xc-yz-iph" secondAttribute="leadingMargin" id="6Ru-pF-9lJ"/>
+                            <constraint firstItem="5UL-MA-cDG" firstAttribute="centerX" secondItem="vAU-X7-4ox" secondAttribute="centerX" id="ABj-4J-jSy"/>
+                            <constraint firstAttribute="bottom" secondItem="5UL-MA-cDG" secondAttribute="bottom" constant="20" symbolic="YES" id="CAK-1S-nsT"/>
+                            <constraint firstItem="1UF-XF-xXz" firstAttribute="centerY" secondItem="3Xc-yz-iph" secondAttribute="centerY" constant="-299.5" id="IIE-ux-TrT"/>
+                            <constraint firstItem="vAU-X7-4ox" firstAttribute="centerY" secondItem="3Xc-yz-iph" secondAttribute="centerY" constant="-262.5" id="KU5-RJ-12G"/>
+                            <constraint firstItem="0F8-Mb-jRw" firstAttribute="centerY" secondItem="3Xc-yz-iph" secondAttribute="centerY" id="T02-Gf-KBh"/>
+                            <constraint firstItem="1UF-XF-xXz" firstAttribute="centerX" secondItem="3Xc-yz-iph" secondAttribute="centerX" id="Vi3-5S-eYS"/>
+                            <constraint firstItem="5UL-MA-cDG" firstAttribute="top" secondItem="vAU-X7-4ox" secondAttribute="bottom" constant="8" symbolic="YES" id="asa-c4-H8G"/>
+                            <constraint firstItem="vAU-X7-4ox" firstAttribute="centerX" secondItem="3Xc-yz-iph" secondAttribute="centerX" constant="-0.5" id="qh1-4c-ByD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ymq-AD-Ctr"/>
+                    </view>
+                    <connections>
+                        <outlet property="myButton" destination="vAU-X7-4ox" id="VPU-9M-tfh"/>
+                        <outlet property="myImage1" destination="2xJ-uv-4IZ" id="GMc-dd-dGk"/>
+                        <outlet property="myLabel" destination="0F8-Mb-jRw" id="Cz3-CS-vG7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iFE-oQ-89y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-644" y="616.64167916041981"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="poror" width="16" height="16"/>
+    </resources>
+</document>
